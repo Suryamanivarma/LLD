@@ -54,4 +54,8 @@ public class TicketService {
 
     }
 
+    public Optional<Ticket> getTicketById(Long ticketId) {
+        return ticketRepository.findById(ticketId);
+    }
+
 }
